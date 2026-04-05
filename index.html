@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Rizwan — AI & Full Stack Developer</title>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="pre-wrap">
+      <div class="pre-orbit">
+        <div class="pre-core">MR</div>
+        <div class="pre-ring pre-ring-1"></div>
+        <div class="pre-ring pre-ring-2"></div>
+        <div class="pre-spark pre-spark-1"></div>
+        <div class="pre-spark pre-spark-2"></div>
+      </div>
+      <div class="pre-meta">
+        <div class="pre-label">// booting portfolio</div>
+        <div class="pre-name">MOHAMED RIZWAN</div>
+        <div class="pre-bar-wrap">
+          <div class="pre-bar" id="pre-bar"></div>
+        </div>
+        <div class="pre-bottom">
+          <span class="pre-pct" id="pre-pct">0%</span>
+          <span class="pre-tip">Assembling projects, skills & stories…</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CUSTOM CURSOR -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- CANVAS -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="noise-overlay"></div>
+
+  <!-- SCROLL PROGRESS -->
+  <div id="scroll-bar"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <img src="assets/img/logo.png" alt="MR Logo" class="logo-img">
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <span class="theme-icon">🌙</span>
+        <span class="theme-label">Dark</span>
+      </button>
+      <span class="nav-time" id="nav-time"></span>
+      <a href="#contact" class="btn-hire">Hire Me</a>
+    </div>
+    <button type="button" class="burger" id="burger" aria-label="Toggle mobile menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE OVERLAY -->
+  <div class="mob-menu" id="mob-menu">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ═════════ HERO SECTION ═════════ -->
+  <section id="hero" class="section hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-dot"></span>
+          <span class="eyebrow-text">Available · Tindivanam, Tamil Nadu</span>
+        </div>
+
+        <h1 class="hero-h1">
+          <span class="name-main">MOHAMED</span>
+          <span class="name-accent">RIZWAN</span>
+        </h1>
+
+        <p class="hero-role">
+          <span id="typed-role"></span>
+          <span class="typed-cursor">|</span>
+        </p>
+
+        <p class="hero-bio">
+          Passionate about building intelligent solutions using <br>
+          <strong>Artificial Intelligence</strong> &
+          <strong>Data Science</strong>
+        </p>
+
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary hero-btn">
+            Explore Work
+            <span class="btn-arrow">→</span>
+          </a>
+
+          <a href="#contact" class="btn-ghost hero-btn">
+            Get In Touch
+          </a>
+        </div>
+
+        <div class="hero-stats">
+
+          <div class="stat-card">
+            <i class="fas fa-code"></i>
+            <span class="stat-number counter" data-target="6">6</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+
+          <div class="stat-card">
+            <i class="fas fa-graduation-cap"></i>
+            <span class="stat-number">8.7</span>
+            <span class="stat-label">Current GPA</span>
+          </div>
+
+          <div class="stat-card">
+            <i class="fas fa-certificate"></i>
+            <span class="stat-number counter" data-target="5">5</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="ai-orb">
+
+          <div class="orb-glow"></div>
+
+          <div class="orb-ring"></div>
+
+          <div class="orb-ring inner-ring"></div>
+
+          <div class="orb-avatar">
+            <img src="assets/img/PROFILE.png" alt="Mohamed Rizwan">
+          </div>
+
+        </div>
+
+        <div class="hero-social-dock" aria-label="Social links">
+          <a class="hero-soc-icon" href="https://github.com/mohamedrizwan4518" target="_blank" rel="noopener noreferrer"
+            aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+              <path
+                d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+            </svg>
+          </a>
+
+          <a class="hero-soc-icon" href="https://www.linkedin.com/in/rizwan-techosis/" target="_blank"
+            rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+              <path
+                d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0.5 23.5h4V7.98h-4V23.5zM8.5 7.98h3.83v2.12h.05c.53-1 1.83-2.12 3.77-2.12 4.03 0 4.77 2.65 4.77 6.1v9.42h-4v-8.35c0-1.99-.04-4.56-2.78-4.56-2.78 0-3.2 2.17-3.2 4.41v8.5h-4V7.98z" />
+            </svg>
+          </a>
+
+          <a class="hero-soc-icon" href="https://www.instagram.com/smileyrizwan__/" target="_blank"
+            rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+              <path
+                d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm9 2h-9A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.25-2.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z" />
+            </svg>
+          </a>
+
+          <a class="hero-soc-icon" href="mailto:mohamedrizwan4518@gmail.com" aria-label="Email" title="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"
+              aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <a class="hero-scroll" href="#about" aria-label="Scroll to About section">
+
+      <span class="scroll-ring"></span>
+
+      <span class="scroll-icon">
+        <i class="fas fa-angle-down"></i>
+      </span>
+
+      <span class="scroll-text">Explore</span>
+
+    </a>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about" class="section">
+    <div class="sec-tag" data-aos><em>01</em> About Me</div>
+    <div class="about-wrap">
+      <div class="about-img-side" data-aos>
+        <div class="a-frame">
+          <img src="assets/img/me.jpeg" alt="Mohamed Rizwan"
+            onerror="this.style.display='none';this.parentNode.querySelector('.af-fb').style.display='flex'" />
+
+          <div class="af-fb">👨‍💻</div>
+          <div class="a-scanline"></div>
+        </div>
+        <div class="a-badge a-badge-1"><span>🎓</span>
+          <div><strong>B.Tech AI & DS</strong><em>ACET, PUDUCHERRY</em></div>
+        </div>
+        <div class="a-badge a-badge-2"><span>⚡</span>
+          <div><strong>GPA 8.4 / 10</strong><em>2023 – 2027</em></div>
+        </div>
+      </div>
+      <div class="about-text-side" data-aos data-delay="150">
+        <h2 class="sec-title centered" data-aos>From Idea to Impact <em>This Is My Journey</em></h2>
+        <div class="about-story">
+          <p class="story-line">
+            🚀 An ambitious journey driven by <span>curiosity</span> and <span>innovation</span> —
+            I am <strong>Mohamed Rizwan</strong>, an <span>AI & Data Science</span> undergraduate.
+          </p>
+          <p class="story-line">
+            🎯 From <span>academic excellence</span> to <span>real-world technologies</span>,
+            I constantly push myself to <span>learn</span>, <span>build</span>, and <span>grow</span>.
+          </p>
+          <p class="story-line">
+            ⚡ With strong <span>problem-solving</span>, <span>communication</span>,
+            and a passion for <span>intelligent systems</span>,
+            I transform ideas into <span>impactful solutions</span>.
+          </p>
+          <p class="story-line highlight">
+            💡 My goal — to create technology that is not just <span>smart</span>, but <span>meaningful</span>.
+          </p>
+
+        </div>
+        <div class="about-grid">
+
+          <div class="info-card">🎂 Birthday: <strong>27 Sep 2004</strong></div>
+
+          <div class="info-card">👤 Age: <strong>21</strong></div>
+
+          <div class="info-card">
+            📞 Phone:
+            <strong><a href="tel:+919360496365">+91 93604 96365</a></strong>
+          </div>
+
+          <div class="info-card">
+            🎓 Degree:
+            <strong>B.Tech AI & Data Science</strong>
+          </div>
+
+          <div class="info-card">
+            📍 City:
+            <strong>Tindivanam, Tamil Nadu</strong>
+          </div>
+
+          <div class="info-card">
+            ✉️ Email:
+            <strong>
+              <a href="mailto:mohamedrizwan4518@gmail.com">
+                mohamedrizwan4518@gmail.com
+              </a>
+            </strong>
+          </div>
+
+        </div>
+        <a href="#contact" class="btn-primary mag" style="margin-top:1.8rem;display:inline-flex">Let's Connect →</a>
+        <a href="resume.pdf" class="btn-ghost hero-btn resume-btn" target="_blank">
+          <span class="resume-icon">📄</span>
+          View Resume
+          <span class="resume-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+
+    <div class="sec-tag"><em>02</em> Toolkit</div>
+    <h2 class="sec-title centered">Digital <em>Territory</em> ⚡</h2>
+
+    <div class="skills-grid">
+
+      <!-- Skill -->
+      <div class="skill-item">
+        <div class="skill-inner">
+          <img src="assets/img/skill/html.png" alt="HTML">
+          <span>HTML</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-inner">
+          <img src="assets/img/skill/css3.png" alt="CSS">
+          <span>CSS</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-inner">
+          <img src="assets/img/skill/js.webp" alt="JavaScript">
+          <span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-inner">
+          <img src="assets/img/skill/py.png" alt="Python">
+          <span>Python</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-inner">
+          <img src="assets/img/skill/react.webp" alt="React">
+          <span>React</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-inner">
+          <img src="assets/img/skill/sql.png" alt="MySQL">
+          <span>MySQL</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-inner">
+          <img src="assets/img/skill/ml.png" alt="Machine Learning">
+          <span>Machine Learning</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-inner">
+          <img src="assets/img/skill/iot.png" alt="IoT">
+          <span>IoT</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-inner">
+          <img src="assets/img/skill/ai.png" alt="AI">
+          <span>Artificial Intelligence</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-inner">
+          <img src="assets/img/skill/data-science.png" alt="Data Science">
+          <span>Data Science</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-inner">
+          <img src="assets/img/skill/photoshop.png" alt="Photoshop">
+          <span>Photoshop</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-inner">
+          <img src="assets/img/skill/django.png" alt="Django">
+          <span>Django</span>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <section id="resume" class="section">
+
+    <div class="sec-tag"><em>03</em> Timeline</div>
+
+    <h2 class="sec-title centered">
+      Career <em>Evolution</em> ⚡
+    </h2>
+
+    <!-- SWITCH -->
+    <div class="rx-switch">
+
+      <div class="rx-tab active" data-tab="edu">
+        <span class="icon">🎓</span>
+        <span class="label">Education</span>
+      </div>
+
+      <div class="rx-tab" data-tab="cert">
+        <span class="icon">📜</span>
+        <span class="label">Certifications</span>
+      </div>
+
+      <div class="rx-tab" data-tab="intern">
+        <span class="icon">💼</span>
+        <span class="label">Internships</span>
+      </div>
+
+      <div class="rx-tab" data-tab="ach">
+        <span class="icon">🏆</span>
+        <span class="label">Achievements</span>
+      </div>
+
+    </div>
+
+    <div class="rx-timeline">
+
+      <!-- ================= EDUCATION ================= -->
+      <div class="rx-group active" id="edu">
+
+        <div class="rx-item left" data-icon="🎓">
+          <div class="rx-card">
+            <div class="rx-top">
+              <h3>B.Tech – AI & Data Science</h3>
+              <span class="rx-badge">2023 – 2027</span>
+            </div>
+            <p>Achariya College of Engineering and Technology, Puducherry</p>
+            <small class="highlight">CGPA: 8.7 / 10</small>
+          </div>
+        </div>
+
+        <div class="rx-item right" data-icon="🎓">
+          <div class="rx-card">
+            <div class="rx-top">
+              <h3>Higher Secondary (CBSE)</h3>
+              <span class="rx-badge">2023</span>
+            </div>
+            <p>VKM Vidhyalaya School, Tamil Nadu</p>
+            <small class="highlight">84%</small>
+          </div>
+        </div>
+
+        <div class="rx-item left" data-icon="🎓">
+          <div class="rx-card">
+            <div class="rx-top">
+              <h3>Secondary School (CBSE)</h3>
+              <span class="rx-badge">2021</span>
+            </div>
+            <p>VKM Vidhyalaya School, Tamil Nadu</p>
+            <small class="highlight">79%</small>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ================= CERTIFICATIONS ================= -->
+      <div class="rx-group" id="cert">
+
+        <div class="rx-item left" data-icon="📜">
+          <div class="rx-card">
+            <div class="rx-top">
+              <h3>Python Full Stack Development</h3>
+              <span class="rx-badge">2024 – 2025</span>
+            </div>
+            <p>FITA Academy</p>
+            <p class="desc">Python • Web Dev • DB • Debugging • UI Design</p>
+          </div>
+        </div>
+
+        <div class="rx-item right" data-icon="📜">
+          <div class="rx-card">
+            <div class="rx-top">
+              <h3>Accenture Developer Simulation</h3>
+              <span class="rx-badge">2025</span>
+            </div>
+            <p>Forage & Accenture</p>
+            <p class="desc">Problem Solving • SDLC • Debugging • Workflow</p>
+          </div>
+        </div>
+
+        <div class="rx-item left" data-icon="📜">
+          <div class="rx-card">
+            <div class="rx-top">
+              <h3>ICT Learnathon Excellence</h3>
+              <span class="rx-badge">2024 – 2025</span>
+            </div>
+            <p>ICT Academy</p>
+            <p class="desc">Innovation • Learning • Technical Skills</p>
+          </div>
+        </div>
+
+        <div class="rx-item right" data-icon="📜">
+          <div class="rx-card">
+            <div class="rx-top">
+              <h3>UiPath RPA Certification</h3>
+              <span class="rx-badge">2025</span>
+            </div>
+            <p>UiPath & ICT Academy</p>
+            <p class="desc">RPA • Automation • Workflow • Optimization</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ================= INTERNSHIPS ================= -->
+      <div class="rx-group" id="intern">
+
+        <!-- 1 -->
+        <div class="rx-item left" data-icon="💼">
+          <div class="rx-card">
+            <div class="rx-top">
+              <h3>AI Intern – Vision Inspection System</h3>
+              <span class="rx-badge">Jun – Jul 2025</span>
+            </div>
+            <p>United Industries Plastic Pvt Ltd</p>
+            <p class="desc">
+              Vendor Vision Inspection System using AI • Computer Vision • Industrial Automation
+            </p>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="rx-item right" data-icon="💼">
+          <div class="rx-card">
+            <div class="rx-top">
+              <h3>Microsoft AI Internship – Foundations</h3>
+              <span class="rx-badge">Apr – Jul 2025</span>
+            </div>
+            <p>Edunet Foundation – Microsoft (AICTE)</p>
+            <p class="desc">
+              Artificial Intelligence • Microsoft Tools • Data Handling • AI Concepts
+            </p>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="rx-item left" data-icon="💼">
+          <div class="rx-card">
+            <div class="rx-top">
+              <h3>Green Skills using AI</h3>
+              <span class="rx-badge">Jan – Apr 2025</span>
+            </div>
+            <p>Edunet Foundation – Shell India (AICTE)</p>
+            <p class="desc">
+              AI • Data Science • Sustainability • Environmental Intelligence
+            </p>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="rx-item right" data-icon="💼">
+          <div class="rx-card">
+            <div class="rx-top">
+              <h3>Associate Trainee – Software Development</h3>
+              <span class="rx-badge">2024 – 2025</span>
+            </div>
+            <p>Technosprint Info Solutions</p>
+            <p class="desc">
+              Software Development • Team Collaboration • Project Execution
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ================= ACHIEVEMENTS ================= -->
+      <div class="rx-group" id="ach">
+
+        <div class="rx-item left" data-icon="🏆">
+          <div class="rx-card">
+            <div class="rx-top">
+              <h3>Pudhvai Youth Fest 2026</h3>
+              <span class="rx-badge">🏆 Medalist + Cash Prize</span>
+            </div>
+            <p>Organized by AISDC & UNESCO</p>
+          </div>
+        </div>
+
+        <div class="rx-item right" data-icon="🏆">
+          <div class="rx-card">
+            <div class="rx-top">
+              <h3>Green Olympiad</h3>
+              <span class="rx-badge">District Rank</span>
+            </div>
+            <p>TERI – Ministry of Education</p>
+          </div>
+        </div>
+
+        <div class="rx-item left" data-icon="🏆">
+          <div class="rx-card">
+            <div class="rx-top">
+              <h3>Jeevan Vigyan Competition</h3>
+              <span class="rx-badge">🥈 Silver Medal</span>
+            </div>
+            <p>UNESCO Associated Program</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section id="projects" class="section">
+    <div class="sec-tag" data-aos><em>02</em> Selected Work</div>
+    <h2 class="sec-title centered" data-aos>Projects I'm <em>Proud Of</em></h2>
+
+    <div class="proj-filter" data-aos>
+      <button class="pf-btn active" data-filter="all">All</button>
+      <button class="pf-btn" data-filter="web">Web</button>
+      <button class="pf-btn" data-filter="iot">IoT</button>
+      <button class="pf-btn" data-filter="ai">AI / ML</button>
+    </div>
+
+    <div class="stack-container" id="proj-grid">
+      <!-- 1 -->
+      <div class="stack-card" data-cat="web" style="--card-index: 1;" data-aos>
+        <div class="st-left">
+          <img src="assets/img/portfolio/project-1.png" alt="Personal Portfolio" loading="lazy">
+        </div>
+        <div class="st-right">
+          <div class="st-top-bar">
+            <h3>Personal Portfolio - Glassmorphic Identity</h3>
+          </div>
+          <div class="st-tags">
+            <span class="st-tag">React js</span>
+            <span class="st-tag">HTML/CSS</span>
+            <span class="st-tag">Javascript</span>
+          </div>
+          <p class="st-desc">Personal Portfolio is a highly responsive, animated showcase highlighting my journey and
+            projects smoothly. Designed with modern aesthetics and premium interactions for the best user experience.
+          </p>
+          <div class="st-actions">
+            <a href="https://github.com/mohamedrizwan4518/Web-portfolio" target="_blank" class="st-btn">Code <i
+                class="fas fa-code"></i></a>
+            <a href="https://github.com/mohamedrizwan4518/Web-portfolio" target="_blank" class="st-btn-outline">Demo <i
+                class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="stack-card" data-cat="web" style="--card-index: 2;" data-aos data-delay="60">
+        <div class="st-left">
+          <img src="assets/img/portfolio/project2.jpg" alt="Weather Report" loading="lazy">
+        </div>
+        <div class="st-right">
+          <div class="st-top-bar">
+            <h3>Weather Report App</h3>
+          </div>
+          <div class="st-tags">
+            <span class="st-tag">Python</span>
+            <span class="st-tag">HTML/CSS</span>
+            <span class="st-tag">REST API</span>
+          </div>
+          <p class="st-desc">A beautiful, real-time weather forecasting application that provides users with up-to-date
+            weather conditions, localized stats, and sleek climate visuals dynamically.</p>
+          <div class="st-actions">
+            <a href="https://github.com/mohamedrizwan4518/Weather_Report" target="_blank" class="st-btn">Code <i
+                class="fas fa-code"></i></a>
+            <a href="https://github.com/mohamedrizwan4518/Weather_Report" target="_blank" class="st-btn-outline">Demo <i
+                class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="stack-card" data-cat="ai" style="--card-index: 3;" data-aos data-delay="120">
+        <div class="st-left">
+          <img src="assets/img/portfolio/project-3.jpg" alt="Speech Recognition" loading="lazy">
+        </div>
+        <div class="st-right">
+          <div class="st-top-bar">
+            <h3>Speech Recognition API Integration</h3>
+          </div>
+          <div class="st-tags">
+            <span class="st-tag">Python</span>
+            <span class="st-tag">Machine Learning</span>
+            <span class="st-tag">JS</span>
+          </div>
+          <p class="st-desc">High-accuracy audio-to-text platform utilizing advanced machine learning speech models.
+            Provides effortless transcription and seamless integration pipelines.</p>
+          <div class="st-actions">
+            <a href="https://github.com/mohamedrizwan4518/SpeechRecognition--Speech-to-Text" target="_blank"
+              class="st-btn">Code <i class="fas fa-code"></i></a>
+            <a href="https://github.com/mohamedrizwan4518/SpeechRecognition--Speech-to-Text" target="_blank"
+              class="st-btn-outline">Demo <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="stack-card" data-cat="iot" style="--card-index: 4;" data-aos>
+        <div class="st-left">
+          <img src="assets/img/portfolio/app-1.jpg" alt="Smart Home Solutions" loading="lazy">
+        </div>
+        <div class="st-right">
+          <div class="st-top-bar">
+            <h3>Smart Home Automation Solutions</h3>
+          </div>
+          <div class="st-tags">
+            <span class="st-tag">IoT</span>
+            <span class="st-tag">Arduino</span>
+            <span class="st-tag">Sensors</span>
+          </div>
+          <p class="st-desc">A comprehensive IoT home automation system designed for efficient and secure environmental
+            control. Featuring robust sensor integration and real-time smart triggers.</p>
+          <div class="st-actions">
+            <a href="https://github.com/mohamedrizwan4518/Home_Automation" target="_blank" class="st-btn">Code <i
+                class="fas fa-code"></i></a>
+            <a href="https://github.com/mohamedrizwan4518/Home_Automation" target="_blank" class="st-btn-outline">Demo
+              <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="stack-card" data-cat="iot" style="--card-index: 5;" data-aos data-delay="60">
+        <div class="st-left">
+          <img src="assets/img/portfolio/app-2.jpg" alt="Gesture Speaker" loading="lazy">
+        </div>
+        <div class="st-right">
+          <div class="st-top-bar">
+            <h3>Gesture Controlled Bluetooth Speaker</h3>
+          </div>
+          <div class="st-tags">
+            <span class="st-tag">IoT</span>
+            <span class="st-tag">C++ / Arduino</span>
+            <span class="st-tag">Hardware</span>
+          </div>
+          <p class="st-desc">Control Bluetooth media intuitively using hand gestures. Hardware engineering meets
+            seamless UX offering play, pause, and skip functionalities absolutely touch-free.</p>
+          <div class="st-actions">
+            <a href="https://github.com/mohamedrizwan4518/gesture-controlled-bluetooth-speaker" target="_blank"
+              class="st-btn">Code <i class="fas fa-code"></i></a>
+            <a href="https://github.com/mohamedrizwan4518/gesture-controlled-bluetooth-speaker" target="_blank"
+              class="st-btn-outline">Demo <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="stack-card" data-cat="iot" style="--card-index: 6;" data-aos data-delay="120">
+        <div class="st-left">
+          <img src="assets/img/portfolio/app-3.png" alt="Smart Street Light" loading="lazy">
+        </div>
+        <div class="st-right">
+          <div class="st-top-bar">
+            <h3>Auto Smart Street Lightning System</h3>
+          </div>
+          <div class="st-tags">
+            <span class="st-tag">IoT Flow</span>
+            <span class="st-tag">Arduino</span>
+            <span class="st-tag">Smart City</span>
+          </div>
+          <p class="st-desc">Auto-adjusting energy-efficient lighting grids tailored for smart urban environments.
+            Senses ambient lighting and proximity to intelligently allocate energy reserves.</p>
+          <div class="st-actions">
+            <a href="https://github.com/mohamedrizwan4518/smart-street-light-system" target="_blank" class="st-btn">Code
+              <i class="fas fa-code"></i></a>
+            <a href="https://github.com/mohamedrizwan4518/smart-street-light-system" target="_blank"
+              class="st-btn-outline">Demo <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="services" class="section services">
+
+    <div class="sec-tag"><em>05</em> What I Offer</div>
+    <h2 class="sec-title centered">Services <em>Expertise </em></h2>
+
+    <div class="svc-grid">
+
+      <!-- 1 -->
+      <div class="svc-card">
+        <div class="svc-img">
+          <img src="assets/img/service/webdesign.jpg" alt="Web Design">
+        </div>
+        <h3>Web Design</h3>
+        <p>
+          Modern responsive websites with clean UI.
+          Optimized for speed and performance.
+          Engaging user experience.
+        </p>
+        <div class="svc-tools">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-js"></i>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="svc-card">
+        <div class="svc-img">
+          <img src="assets/img/service/uiux.jpg" alt="UI UX Design">
+        </div>
+        <h3>UI/UX Design</h3>
+        <p>
+          Creative and user-friendly interfaces.
+          Focus on usability and accessibility.
+          Smooth and intuitive designs.
+        </p>
+        <div class="svc-tools">
+          <i class="fas fa-pen-nib"></i>
+          <i class="fas fa-palette"></i>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="svc-card">
+        <div class="svc-img">
+          <img src="assets/img/service/fullstack.jpeg" alt="Full Stack">
+        </div>
+        <h3>Full Stack Solutions</h3>
+        <p>
+          Complete web and app development.
+          Frontend to backend integration.
+          Scalable and modern solutions.
+        </p>
+        <div class="svc-tools">
+          <i class="fab fa-react"></i>
+          <i class="fab fa-node"></i>
+          <i class="fab fa-python"></i>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="svc-card">
+        <div class="svc-img">
+          <img src="assets/img/service/py.png" alt="Python Dev">
+        </div>
+        <h3>Python Development</h3>
+        <p>
+          Backend systems and automation.
+          API development and scripting.
+          Efficient and optimized solutions.
+        </p>
+        <div class="svc-tools">
+          <i class="fab fa-python"></i>
+          <i class="fas fa-server"></i>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="svc-card">
+        <div class="svc-img">
+          <img src="assets/img/service/iot.jpg" alt="IoT">
+        </div>
+        <h3>IoT Projects</h3>
+        <p>
+          Smart automation with sensors.
+          Real-time monitoring systems.
+          Scalable IoT solutions.
+        </p>
+        <div class="svc-tools">
+          <i class="fas fa-microchip"></i>
+          <i class="fas fa-wifi"></i>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="svc-card">
+        <div class="svc-img">
+          <img src="assets/img/service/photo.jpg" alt="Photography">
+        </div>
+        <h3>Photography</h3>
+        <p>
+          High-quality visuals and editing.
+          Event and portrait photography.
+          Creative storytelling.
+        </p>
+        <div class="svc-tools">
+          <i class="fas fa-camera"></i>
+          <i class="fas fa-image"></i>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="svc-card">
+        <div class="svc-img">
+          <img src="assets/img/service/bus.jpg" alt="Business Consulting">
+        </div>
+        <h3>Business Consulting</h3>
+        <p>
+          Strategic planning and growth ideas.
+          Tech solutions for business needs.
+          Improving productivity and efficiency.
+        </p>
+        <div class="svc-tools">
+          <i class="fas fa-briefcase"></i>
+          <i class="fas fa-chart-line"></i>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="svc-card">
+        <div class="svc-img">
+          <img src="assets/img/service/edit.png" alt="Video Editing">
+        </div>
+        <h3>Video Editing</h3>
+        <p>
+          Professional video editing services.
+          Smooth transitions and effects.
+          Creative storytelling visuals.
+        </p>
+        <div class="svc-tools">
+          <i class="fas fa-video"></i>
+          <i class="fas fa-film"></i>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="svc-card">
+        <div class="svc-img">
+          <img src="assets/img/service/ai.jpg" alt="AI Solutions">
+        </div>
+        <h3>AI Solutions</h3>
+        <p>
+          AI-powered applications and automation.
+          Chatbots and smart systems.
+          Intelligent modern solutions.
+        </p>
+        <div class="svc-tools">
+          <i class="fas fa-robot"></i>
+          <i class="fas fa-brain"></i>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="contact" class="section contact-pro">
+
+    <div class="sec-tag"><em>06</em> Get In Touch</div>
+    <h2 class="sec-title centered">Let's Build Something <em>Great</em></h2>
+    <p class="contact-sub">
+      Have a project or idea? Let's make it real. I reply within 24 hours.
+    </p>
+
+    <div class="contact-container">
+
+      <!-- LEFT -->
+      <div class="contact-left">
+
+        <div class="ccard">
+          <div class="icon-wrap">✉️</div>
+          <div>
+            <strong>Email</strong>
+            <span>mohamedrizwan4518@gmail.com</span>
+          </div>
+        </div>
+
+        <div class="ccard">
+          <div class="icon-wrap">📞</div>
+          <div>
+            <strong>Phone</strong>
+            <span>+91 93604 96365</span>
+          </div>
+        </div>
+
+        <div class="ccard">
+          <div class="icon-wrap">📍</div>
+          <div>
+            <strong>Location</strong>
+            <span>Tindivanam, Tamil Nadu</span>
+          </div>
+        </div>
+
+        <div class="map-box">
+          <iframe src="https://maps.google.com/maps?q=Tindivanam&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <form action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- ACCESS KEY -->
+        <input type="hidden" name="access_key" value="b814643c-1275-4c21-91ac-291850632c70">
+
+        <!-- EMAIL SETTINGS -->
+        <input type="hidden" name="subject" value="New Portfolio Message">
+        <input type="hidden" name="from_name" value="Portfolio Contact">
+        <input type="hidden" name="replyto" value="email">
+
+        <div class="form-row-2">
+          <div class="fg">
+            <input type="text" name="name" placeholder=" " required>
+            <label>Full Name</label>
+          </div>
+
+          <div class="fg">
+            <input type="email" name="email" placeholder=" " required>
+            <label>Email Address</label>
+          </div>
+        </div>
+
+        <div class="form-row-2">
+          <div class="fg">
+            <input type="tel" name="phone" placeholder=" ">
+            <label>Phone (Optional)</label>
+          </div>
+
+          <div class="fg">
+            <input type="text" name="subject_user" placeholder=" " required>
+            <label>Subject</label>
+          </div>
+        </div>
+
+        <div class="fg select-box">
+          <select name="service" required>
+            <option value="" disabled selected hidden></option>
+            <option>Web Design</option>
+            <option>UI/UX Design</option>
+            <option>Full Stack Development</option>
+            <option>Python Development</option>
+            <option>IoT Projects</option>
+            <option>Photography</option>
+            <option>Business Consulting</option>
+            <option>Video Editing</option>
+            <option>AI Solutions</option>
+          </select>
+          <label>Select Service</label>
+        </div>
+
+        <div class="fg">
+          <textarea name="message" rows="5" placeholder=" " required></textarea>
+          <label>Your Message</label>
+        </div>
+
+        <button type="submit" class="btn-send">Send Message ✦</button>
+
+      </form>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Left Section -->
+      <div class="footer-left">
+        <div class="logo-box">
+          <img src="assets/img/favicon.png" alt="Mohamed Rizwan Logo">
+        </div>
+
+        <div class="footer-text">
+          <h3>Mohamed Rizwan</h3>
+          <p>Building intelligent solutions with passion 🚀</p>
+        </div>
+      </div>
+
+      <!-- Center Section -->
+      <div class="footer-center">
+        <p>© 2026 All Rights Reserved</p>
+        <span>Tindivanam, Tamil Nadu 🇮🇳</span>
+      </div>
+
+      <!-- Right Section -->
+      <div class="footer-right">
+        <a href="#hero" class="back-top">⬆ Back to Top</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</body>
+
+</html>
