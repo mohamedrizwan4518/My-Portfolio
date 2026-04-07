@@ -31,42 +31,85 @@
 
 ## ✨ Key Features
 
-🚀 **Modern UI/UX**
-- Clean, futuristic interface with glassmorphism effects  
-- Smooth typography and spacing  
+<table align=center>
+<tr>
+<td>
 
-🌙 **Theme System**
-- Dark & Light mode toggle  
-- Persistent theme using local storage  
+🚀 **Modern UI/UX**  
+✨ Futuristic glassmorphism design  
+✨ Clean typography & spacing  
 
-⚡ **Advanced Animations**
-- Custom cursor interaction  
-- Scroll-based animations (AOS-like effects)  
-- Preloader animation with progress indicator  
+</td>
+<td>
 
-🌌 **Interactive Background**
-- Canvas-based animated particles  
-- Dynamic visual effects for immersive feel  
+🌙 **Theme System**  
+🌗 Dark & Light mode toggle  
+💾 Theme saved with local storage  
 
-📱 **Fully Responsive**
-- Optimized for mobile, tablet, and desktop  
-- Adaptive layout with fluid grid system  
+</td>
+</tr>
 
-🎯 **Performance Optimized**
-- Lightweight and fast loading  
-- Optimized assets and smooth rendering  
+<tr>
+<td>
+
+⚡ **Advanced Animations**  
+🎯 Custom cursor interaction  
+🎬 Smooth scroll-based effects  
+⏳ Preloader with progress  
+
+</td>
+<td>
+
+🌌 **Interactive Background**  
+✨ Animated canvas particles  
+🌠 Dynamic visual effects  
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+📱 **Fully Responsive**  
+📲 Mobile, tablet & desktop ready  
+📐 Fluid grid layout  
+
+</td>
+<td>
+
+🎯 **Performance Optimized**  
+⚡ Fast loading experience  
+🚀 Lightweight & smooth  
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🧩 Sections Included
 
-- 🏠 Hero Section (animated intro + roles)  
-- 👨‍💻 About Section  
-- ⚡ Skills Showcase  
-- 📄 Resume Section  
-- 💼 Projects / Work Section  
-- 🛠️ Services Section  
-- 📬 Contact Section  
+<p align="center">
+
+<table align="center">
+<tr>
+<td align="center">🏠<br><b>Hero</b><br><sub>Animated intro</sub></td>
+<td align="center">👨‍💻<br><b>About</b><br><sub>Profile overview</sub></td>
+<td align="center">⚡<br><b>Skills</b><br><sub>Tech stack</sub></td>
+</tr>
+
+<tr>
+<td align="center">📄<br><b>Resume</b><br><sub>Download CV</sub></td>
+<td align="center">💼<br><b>Projects</b><br><sub>Work showcase</sub></td>
+<td align="center">🛠️<br><b>Services</b><br><sub>What I offer</sub></td>
+</tr>
+
+<tr>
+<td colspan="3" align="center">📬<br><b>Contact</b><br><sub>Get in touch</sub></td>
+</tr>
+</table>
+
+</p>
 
 ---
 
@@ -76,21 +119,23 @@
   <img src="https://skillicons.dev/icons?i=html,css,js" />
 </p>
 
-### 🔧 Core Technologies
-- **HTML5** → Structure  
-- **CSS3** → Styling & Animations  
-- **JavaScript (Vanilla)** → Interactivity  
+<p align="center">
+  <b>HTML5</b> • Structure &nbsp;&nbsp; | &nbsp;&nbsp;
+  <b>CSS3</b> • Styling & Animations &nbsp;&nbsp; | &nbsp;&nbsp;
+  <b>JavaScript</b> • Interactivity
+</p>
 
 ---
 
-## 📂 Project Structure
-assets/
-┣ css/
-┣ js/
-┗ img/
-index.html
-RESUME.pdf
 
+## 📂 Project Structure
+```bash
+📁 assets
+ ┣ 📁 css
+ ┣ 📁 js
+ ┗ 📁 img
+📄 index.html
+📄 RESUME.pdf
 
 ---
 
@@ -105,3 +150,5 @@ cd My-Portfolio
 
 ---
 index.html
+
+> ⚡ Built with performance, design & innovation in mind
